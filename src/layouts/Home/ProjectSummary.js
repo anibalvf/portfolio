@@ -18,6 +18,7 @@ const Model = dynamic(() => import('components/Model').then(mod => mod.Model));
 export const ProjectSummary = ({
   id,
   visible: sectionVisible,
+  ocultar,
   sectionRef,
   index,
   title,
@@ -146,6 +147,7 @@ export const ProjectSummary = ({
   );
 
   return (
+    
     <Section
       className={styles.summary}
       data-alternate={alternate}
