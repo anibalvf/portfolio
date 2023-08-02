@@ -81,6 +81,15 @@ export const Contact = () => {
             >
               <DecoderText text="Say hello" start={status !== 'exited'} delay={300} />
             </Heading>
+            <Heading
+              className={styles.title}
+              data-status={status}
+              level={5}
+              as="h6"
+              style={getDelay(tokens.base.durationXS, initDelay, 0.3)}
+            >
+              <DecoderText text="[Currently disabled, you can contact with me on Linkedin]" start={status !== 'exited'} delay={300} />
+            </Heading>
             <Divider
               className={styles.divider}
               data-status={status}
@@ -131,7 +140,7 @@ export const Contact = () => {
               data-status={status}
               data-sending={sending}
               style={getDelay(tokens.base.durationM, initDelay)}
-              disabled={sending}
+              disabled={true}
               loading={sending}
               loadingText="Sending..."
               icon="send"
