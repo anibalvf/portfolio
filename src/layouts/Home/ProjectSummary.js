@@ -50,7 +50,7 @@ export const ProjectSummary = ({
       className={styles.svg}
       data-device={device}
     >
-      <use href={`${projectKatakana}#katakana-project`} />
+      {/* <use href={`${projectKatakana}#katakana-project`} /> */}
     </svg>
   );
 
@@ -80,9 +80,9 @@ export const ProjectSummary = ({
         {description}
       </Text>
       <div className={styles.button} data-visible={visible}>
-        <Button iconHoverShift href={buttonLink} iconEnd="arrowRight">
+        {/* <Button iconHoverShift href={buttonLink} iconEnd="arrowRight">
           {buttonText}
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

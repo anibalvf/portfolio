@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['FullStack', 'Scrum Master', 'Gamer', 'Android'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,7 +68,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
+        title="Developer"
         description="Design portfolio of Hamish Williams — a product designer working on web & mobile
           apps with a focus on motion, experience design, and accessibility."
       />
@@ -83,10 +83,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Full Stack Web Developer"
+        description="With a strong knowledge of React.js, JavaScript, Django, and Python. I create scalable and efficient applications."
+        // buttonText="View project"
+        // buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -104,8 +104,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Mobile Developer"
+        description="Development of native applications in Android Studio and cross-platform using frameworks like Flutter or React Native."
         buttonText="View website"
         buttonLink="https://gamestack.hamishw.com"
         model={{
