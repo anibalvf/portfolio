@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
+  "homepage": "https://anibalvfportfolio.s3.eu-west-1.amazonaws.com/index.html",
+  "description": "Portfolio site for Anibal Vallejo",
   "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams <hello@hamishw.com>",
+  "author": "Anibal Vallejo <anibalvf2010@gmail.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
